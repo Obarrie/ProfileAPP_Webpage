@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CSC305 Profile Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #1df00a;
+            font-family: Arial, sans-serif;
+        }
+        #banner {
+            height: 100px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        #banner h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+        #banner img {
+            max-height: 100px;
+        }
+        #user-profiles {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .user-profile {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .user-profile h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .user-profile p {
+            margin-bottom: 10px;
+        }
+        .user-profile img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #app {
+            margin-top: 20px;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1> MY PROFILE WEBSITE</h1>
+        <img src="/Users/osmanbarrie/Documents/CSC305/mylogo.webp" alt="Logo">
+    </div>
+    <div id="user-profiles">
+        <div class="user-profile">
+            <h2> User1 info</h2>
+            <p>
+                age: 20<br>
+                color: Red<br>
+                dob: 11/28/2003<br>
+                name: Osman Barrie
+            </p>
+            <img src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707751861/wrupazgz6ffzo4fkdsz8.png" alt="User1 data">
+        </div>
+        <div class="user-profile">
+            <h2> User2 info</h2>
+            <p>
+                age: 20<br>
+                color: Blue<br>
+                dob: 10/09/2003<br>
+                name: Mary
+            </p>
+            <img src="http://res.cloudinary.com/thunkablecloudinary123/image/upload/v1707751785/jzyfg5tlnsagrcr6c9vu.png" alt="User2 data">
+        </div>
+    </div>
+    <div id="app">
+        <iframe src="https://thunkable.site/w/K7rauMNG15BFRDeGPNTiK" title="First Thunkable APP" height="100%" width="100%"></iframe>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="firebase-init.js"></script>
+    <script src="app.js"></script>
+    <script src="styling_Profile_App.js"></script>
+</body>
+
+</html>
